@@ -1,0 +1,442 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+body{
+   background-image: url('assets/background.jpg');
+
+}
+
+  
+
+nav h3{
+  color:gray;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-weight: bolder;
+ float:left;
+  padding: 14px 16px;
+  text-align: center;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  nav h3{
+    display: none;
+  }
+}
+nav {
+  display: flex;
+  justify-content: space-between; /* logo on left, links on right */
+  align-items: center;
+  /*background-color: black;*/
+  padding: 0 20px;
+  width: 100%;
+  position: fixed;  /* stays on top */
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+nav ul li{
+  float: right;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 14px 16px;
+  text-align: center;
+}
+
+nav ul li a:hover{
+  background-color: blue;
+}
+
+.footer-container{
+  background-color: #B3446C;
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  color:black;
+  padding: 40px 20px;
+  justify-content:space-between;
+  align-items: flex-start ;
+  
+}
+
+.footer-section{
+  min-width: 250px;
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-section h3{
+  border-bottom: 2px solid blanchedalmond;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color:white;
+  display: inline-block;
+}
+
+.social-icon a{
+  text-decoration: none;
+  color: aqua;
+  font-size: 25px;
+  margin:10px;
+  transition: color 0.3s ;
+}
+
+.social-icon a:hover{
+  color:white
+}
+
+.content-item{
+  display:flex;
+  margin-bottom: 8px;
+  text-align: left;
+  align-items: center;
+}
+
+
+
+
+
+
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+.container{
+  position: relative;
+  overflow-x: hidden;
+
+
+}
+
+.hero-container{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+
+
+}
+
+.video-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.video-overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+
+}
+
+.hero-content{
+  position: relative;
+  z-index: 3;
+  color: black;
+  text-align: center;
+  padding: 0 40px;
+  max-width: 950px;
+}
+.title{
+  font-size: 4.5rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+}
+
+.subtitle{
+  font-size: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 20px;
+
+}
+
+.discription{
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+#page-2{
+  height:100vh;
+  width:100%;
+  position:relative;
+  padding: 80px 10%;
+  
+
+}
+
+#page-2 h2{
+  font-size: 3vw;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  padding-top: 38px;
+  padding-left: 2%;
+  width: 96%;
+  color:#333 ;
+  
+}
+
+#page-2 section{
+  padding-top: 20px;
+}
+
+#page-2 p{
+  padding: 0 10px ;
+  font-size: 1.8vw;
+  font-family: "Poppins", sans-serif;
+  color:#555;
+
+}
+
+#page-3{
+  min-height: 100vh;
+  width:100%;
+  position:relative;
+  padding: 80px 10%;
+  
+  
+
+}
+
+#page3-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-3 h5{
+  font-size: 2vw;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#page-3 h6{
+  font-size: 3vw;
+  font-weight: 500;
+  font-style: italic;
+}
+
+#box{
+    margin-top: 40px;
+    padding-top: 50px 20px;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+justify-content: space-between;
+align-items: center;
+
+gap: 20px;
+
+
+}
+
+ #box .box-item{
+  flex:1;
+  height: 100%;
+  background-color: antiquewhite;
+}
+
+.box-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.box-item img:hover{
+  opacity: 0.5;
+}
+
+/* ---------- PAGE 4 SECTION ---------- */
+#page-4 {
+  padding: 80px 10%;
+  min-height: 100vh;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* Section titles */
+#page-4 h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+  text-transform: capitalize;
+  position: relative;
+}
+
+#page-4 h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e91e63; /* pinkish cosmetic brand feel */
+  margin-top: 8px;
+}
+
+/* Paragraphs */
+#page-4 p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Horizontal rules */
+#page-4 hr {
+  border: none;
+  border-top: 2px solid #eee;
+  margin: 50px 0;
+}
+
+/* ---------- OUR STORY ---------- */
+#our-story {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+/* ---------- PROCESS (How we work) ---------- */
+#process-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+#process-steps .step {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+#process-steps .step:hover {
+  transform: translateY(-5px);
+}
+
+#process-steps h3 {
+  font-size: 1.3rem;
+  color: #e91e63;
+  margin-bottom: 10px;
+}
+
+/* ---------- TEAM ---------- */
+#team {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.team-member {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background: #fafafa;
+  border-radius: 15px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.team-member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 4px solid #e91e63;
+}
+
+.team-member h4 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.team-member p {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* ---------- CONTACT INFO ---------- */
+#contact-info {
+  margin-top: 40px;
+}
+
+.address-box {
+  background: #fafafa;
+  border-left: 5px solid #e91e63;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.address-box p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+
+
+
+
+
+
+  
+  
+
+
