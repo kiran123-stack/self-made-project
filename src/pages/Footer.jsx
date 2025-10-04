@@ -6,7 +6,7 @@ import React from 'react'
 export const Footer = () => {
   return (
     <footer className="footer-container">
-       <div className='footer-section '>
+       <div id='contact' className='footer-section '>
           <h3>Contact Us</h3>
           <div className='content-item'>
           <FontAwesomeIcon icon={faEnvelope} size='2px' style={{marginRight: '4px'}} />
